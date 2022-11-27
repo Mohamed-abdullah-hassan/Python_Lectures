@@ -1,6 +1,9 @@
 #Getting Responce from websit using swapi.dev
 #From video #42
 import requests
+from colorama import init
+
+init()
 
 req = requests.get("https://swapi.dev/api/people/2/")
 person = req.json()
